@@ -8,16 +8,16 @@
     1440px - 90em
  */
 
-@media screen and (min-width: 43em) {
+@media screen and (min-width: 43em) and (max-height: 25em) {
     body{
         background-image: linear-gradient(to top, var(--green-dark-1), var(--green-2));
     }
     main{
-        height: 70vh;
+        height: 83vh;
     }
     section#login{
         width: 80vw;
-        height: 55vh;
+        height: 67vh;
     }
     section#login>div#img{
         float: left;
@@ -29,18 +29,18 @@
         width: 60%;
         height: 100%;
     }
+}
+@media screen and (min-height: 25em) {
+    main{
+        height: 70vh;
+    }
+    section#login{
+        width: 80vw;
+        height: 55vh;
+        min-height: 10em;
+    }
     div#form>p{
         font-size: 1.2em;
-    }
-    div.field > span.material-symbols-outlined {
-        font-size: 2em;
-        width: 40px;
-        padding: 4px;
-    }
-    div.field>input{
-        padding: 12px;
-        font-size: 1em;
-        transform: translateY(-5px);
     }
     form >div.field{
         margin : 8px 0;
@@ -55,6 +55,16 @@
     form >div#links>a{
         font-size: 1em;
         padding: 8px;
+    }
+    div.field>input{
+        padding: 12px;
+        font-size: 1em;
+        transform: translateY(-5px);
+    }
+    div.field > span.material-symbols-outlined {
+        font-size: 2em;
+        width: 40px;
+        padding: 4px;
     }
 }
 @media screen and (min-width: 60em){
