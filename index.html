@@ -10,18 +10,21 @@
 </head>
 <body>
     <main>
+        <div class="login-register">
+            <h1 id="login">Login</h1>
+            <h1><a href="register.html" id="register">Cadastro</a></h1>
+        </div>
         <section id="login">
             <div id="img">
 
             </div>
             <div id="form">
-                <h1>Login</h1>
                 <p>Seja bem vindo(a), por favor conecte-se</p>
             
                 <form action="login.php" method="post" autocomplete="on">
                     <div class="field">
                         <span class="material-symbols-outlined">alternate_email</span>
-                        <input type="email" name="email" id="iemail" placeholder="exemplo@gmail.com" required autocomplete="email" maxlength="30">
+                        <input type="email" name="email" id="iemail" placeholder="exemplo@gmail.com" required autocomplete="email" maxlength="30" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$">
                         <label for="iemail">Email</label>
                     </div> 
                     <div class="field">
@@ -33,8 +36,7 @@
                         <input type="submit" class="botao" value="Entrar"></input>
                     </div>
                     <div id="links">
-                        <a href="register.html" id="register">Não tem uma conta? <strong>Cadastre-se</strong></a>
-                        <!--esqueci minha senha-->
+                        
                         <a href="forgot-password.html" id="forgot">Esqueci minha senha</a>
                     </div>
                 </form>

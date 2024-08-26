@@ -8,33 +8,53 @@
     1440px - 90em
  */
 
-@media screen and (min-width: 46em) {
+@media screen and (min-width: 43em) {
     body{
         background-image: linear-gradient(to top, var(--green-dark-1), var(--green-2));
     }
-    
+    main{
+        height: 70vh;
+    }
     section#login{
         width: 80vw;
-        height: 50vh;
+        height: 55vh;
     }
     section#login>div#img{
         float: left;
-        width: 35%;
+        width: 40%;
         height: 100%;
     }
     section#login>div#form{
         float: right;
-        width: 65%;
+        width: 60%;
         height: 100%;
-    }
-    div#form>h1{
-        font-size: 1.5em;
     }
     div#form>p{
         font-size: 1.2em;
     }
-    form >div#links{
-        margin-top: 15%;
+    div.field > span.material-symbols-outlined {
+        font-size: 2em;
+        width: 40px;
+        padding: 4px;
+    }
+    div.field>input{
+        padding: 12px;
+        font-size: 1em;
+        transform: translateY(-5px);
+    }
+    form >div.field{
+        margin : 8px 0;
+    }
+    div#form>p{
+        font-size: 1.4em;
+    }
+    form >div> input[type = submit]{
+        font-size: 1.2em;
+        height: 40px;
+    }
+    form >div#links>a{
+        font-size: 1em;
+        padding: 8px;
     }
 }
 @media screen and (min-width: 60em){
@@ -52,14 +72,33 @@
         width: 60%;
         height: 100%;
     }
-    form >div#links{
-        margin-top: 18%;
-    }
+    
     div#form>h1{
         font-size: 2em;
     }
     div#form>p{
         font-size: 1.5em;
     }
+    div.field > input{
+        background-color: var(--green-back-2);
+        width: calc(100% - 60px);
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        height: 100%;
+        transform: translateY(-8px);
+    }
+    form >div.field{
+        margin : 10px 0;
+    }
+    form >div> input[type = submit]{
+        font-size: 1.4em;
+        height: 50px;
 
+    }
+    form >div#links>a{
+        margin: 8px 0;
+        font-size: 1.2em;
+        padding: 10px;
+    }
 }
