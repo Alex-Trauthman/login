@@ -1,0 +1,142 @@
+@charset "UTF-8";
+
+/*  Paleta
+    Verde escuro 1 #014c1c
+    Verde escuro 2 #00762c  
+    Verde #16FF3F
+    
+*/
+:root{
+    /*Fpr gradient in background in larger devices*/
+    --green-dark-1: #014c1c;
+    /*For background color, mainly in cellphone devices*/
+    --green-dark-2: #00762c;
+    /*For gradient in background in larger devices, also hovering buttons*/
+    --green-1: #16FF3F;
+    /*For button colors*/
+    --green-2: #008531;
+    /*For field background color*/
+    --green-back: #007f1757;
+    /*For field border color*/
+    --green-back-2: #00ff2f8e;
+    
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body, html{
+    height: 100vh;
+    width: 100vw;
+    background: var(--green-dark-2);
+
+}
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+section#login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: white;
+    height: 80vh;
+    width: 62vw;
+    border-radius: 10px;
+    overflow: hidden; 
+    box-shadow: 0px 0px 10px  rgba(0, 0, 0, 0.374);
+    transition: width 0.5s, height 0.5s;
+    transition-timing-function: ease;
+    transform: translate(-50%, -50%);
+}
+section#login>div#img{
+    display: block;
+    background: var(--green-dark-1) url(../image/cat-background.jpg) no-repeat center ;
+    height: 40%;
+    background-size:cover;
+}
+section#login>div#form{
+    display: block;
+    padding: 10px;
+}
+div#form>h1{
+    text-align: center;
+    margin: 5px;
+}
+div#form>p{
+    text-align: center;
+    font-size: .9em;
+}
+div#form>form{
+    height: 100%;
+}
+form >div> input[type = submit]{
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    
+    background-color: var(--green-2);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+form >div> input[type = submit]:hover{
+    background-color: var(--green-1);
+}   
+form > a.botao{
+    display: block;
+    text-align: center;
+    
+    text-decoration: none;
+    background-color: var(--green-dark-2);
+}
+form > div#links{
+    margin-top: 15px;
+}
+form >div#links>a{
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin-top :5px;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 5px;
+    font-size: .8em;
+    background-color: var(--green-dark-1);
+    color: white;
+}
+form >div>a:hover{
+    background-color: var(--green-1);
+}
+form >div.field{
+    background-color: var(--green-back); 
+    margin : 5px 0;
+    border-radius: 5px;
+}
+form >div.field>label{
+    display: none;
+
+}
+div.field > span.material-symbols-outlined {
+    font-size: 2em;
+    width: 40px;
+    padding: 2px;
+}
+div.field > input{
+    background-color: var(--green-back-2);
+    width: calc(100% - 50px);
+    padding: 6px;
+    border: none;
+    border-radius: 5px;
+    height: 100%;
+    transform: translateY(-8px);
+}
+div.field > input:focus{
+    background-color: white;
+    outline: none;
+}

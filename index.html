@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetBits - Login</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/media-queries.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+    <main>
+        <section id="login">
+            <div id="img">
+
+            </div>
+            <div id="form">
+                <h1>Login</h1>
+                <p>Seja bem vindo(a), por favor conecte-se</p>
+            
+                <form action="login.php" method="post" autocomplete="on">
+                    <div class="field">
+                        <span class="material-symbols-outlined">alternate_email</span>
+                        <input type="email" name="email" id="iemail" placeholder="exemplo@gmail.com" required autocomplete="email" maxlength="30">
+                        <label for="iemail">Email</label>
+                    </div> 
+                    <div class="field">
+                        <span class="material-symbols-outlined">lock</span>
+                        <input type="password" name="password" id="ipassword" placeholder="********" required autocomplete="current-password" minlength="6" maxlength="24">
+                        <label for="ipassword">Senha</label>
+                    </div>
+                    <div>
+                        <input type="submit" class="botao" value="Entrar"></input>
+                    </div>
+                    <div id="links">
+                        <a href="register.html" id="register">Não tem uma conta? <strong>Cadastre-se</strong></a>
+                        <!--esqueci minha senha-->
+                        <a href="forgot-password.html" id="forgot">Esqueci minha senha</a>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>
