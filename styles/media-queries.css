@@ -31,6 +31,9 @@
     }
 }
 @media screen and (min-width: 43em) and (min-height: 25em) {
+    body{
+        background-image: linear-gradient(to top, var(--green-dark-1), var(--green-2));
+    }
     main{
         height: 70vh;
     }
@@ -77,6 +80,9 @@
     }
 }
 @media screen and (min-width: 60em){
+    body{
+        background-image: linear-gradient(to top, var(--green-dark-1), var(--green-2));
+    }
     section#login{
         width: 70vw;
         height: 55vh;
